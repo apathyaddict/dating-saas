@@ -49,7 +49,7 @@ const Team = () => {
         <p className="my-2 text-lg text-slate-700">
           Three sisters working together to look out for you.
         </p>
-
+        {/* delete later */}
         {/* switch back and remove dan */}
         <ul className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4">
           {teamMembers.map((member) => (
