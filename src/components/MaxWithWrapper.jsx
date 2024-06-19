@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-const MaxWidthWrapper = ({ children }) => {
+const MaxWidthWrapper = ({ children, className }) => {
   return (
     <div
       className={cn(
