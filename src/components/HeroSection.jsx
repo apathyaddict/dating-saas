@@ -5,6 +5,7 @@ import { buttonVariants } from "./ui/button";
 import { MessageCircleHeart } from "lucide-react";
 
 const HeroSection = () => {
+  // nav menu
   return (
     <MaxWidthWrapper className="mb-12 mt-28 flex flex-col items-center justify-center text-center text-slate-800 sm:mt-40">
       <h1 className="max-w-4xl text-5xl font-bold lg:text-6xl">
