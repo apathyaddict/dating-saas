@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import Services from "@/components/Services";
+import Team from "@/components/Team";
 import React from "react";
 
 const Home = () => {
@@ -34,6 +35,7 @@ const Home = () => {
 
       <HeroSection />
       <Services />
+      <Team />
       <div>
         <div className="relative isolate">
           <div

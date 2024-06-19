@@ -49,7 +49,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="m-1 w-1/2 rounded-xl bg-gray-900/10 p-1 ring-1 ring-inset ring-gray-900/10 md:w-1/3 lg:w-1/2">
+          <div className="m-3 w-1/2 rounded-xl bg-gray-900/10 p-3 ring-1 ring-inset ring-gray-900/10 md:w-1/3 lg:w-1/2">
             <Image
               src="/mainDating.png"
               alt="dating"
