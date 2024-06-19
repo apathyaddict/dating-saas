@@ -5,6 +5,7 @@ import React from "react";
 const Home = () => {
   return (
     <section className="relative overflow-hidden">
+      {/* color blob */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -15,6 +16,19 @@ const Home = () => {
               "polygon(50% 0%, 100% 35%, 100% 100%, 50% 80%, 0% 100%, 0% 35%)", // Adjust the points to form a heart shape
           }}
           className="relative left-[calc(50%-13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-red-500 via-pink-500 to-orange-500 opacity-60 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]"
+        />
+      </div>
+
+      <div
+        aria-hidden="true"
+        className="sm:top-100 pointer-events-none absolute inset-x-10 -bottom-40 -z-10 transform-gpu overflow-hidden blur-3xl"
+      >
+        <div
+          style={{
+            clipPath:
+              "polygon(00% 0%, 100% 35%, 100% 100%, 50% 80%, 0% 100%, 0% 35%)", // Adjust the points to form a heart shape
+          }}
+          className="relative left-[calc(50%-13rem)] aspect-[155/678] w-[6.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-blue-300 via-blue-600 opacity-60 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]"
         />
       </div>
 

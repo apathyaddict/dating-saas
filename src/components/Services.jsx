@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <MaxWidthWrapper className="mb-12 mt-28 flex flex-col items-center justify-center text-center sm:mt-40">
+    <MaxWidthWrapper
+      id="services"
+      className="mb-12 mt-28 flex flex-col items-center justify-center text-center sm:mt-40"
+    >
       {/* <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56"> */}
       <div className="mb-12 px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
@@ -22,9 +25,9 @@ const Services = () => {
           {/* </div> */}
         </div>
 
-        <section className="flex flex-col items-center justify-center space-y-4 p-6 md:flex-row md:space-x-4 md:space-y-4">
-          <div className="flex flex-col space-y-4">
-            <div className="flex flex-col items-center rounded-md bg-white p-4">
+        <section className="flex flex-col items-center justify-center space-y-4 p-6 md:flex-row md:space-x-4 md:space-y-0">
+          <div className="flex flex-col items-center space-y-4 md:w-1/3 md:flex-1">
+            <div className="flex flex-col items-center rounded-md p-4">
               <Shirt className="mb-2 h-10 w-10 text-pink-500" />
               <h3 className="mb-2 text-lg font-bold text-slate-700">
                 Enhance your Look
@@ -34,7 +37,7 @@ const Services = () => {
                 recommendations.
               </div>
             </div>
-            <div className="flex flex-col items-center rounded-md bg-white p-4">
+            <div className="flex flex-col items-center rounded-md p-4">
               <Salad className="mb-2 h-10 w-10 text-pink-500" />
               <h3 className="mb-2 text-lg font-bold text-slate-700">
                 Health Tips
@@ -46,7 +49,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="m-1 rounded-xl bg-gray-900/10 p-1 ring-1 ring-inset ring-gray-900/10 lg:-m-1 lg:rounded-xl lg:p-2">
+          <div className="m-1 w-1/2 rounded-xl bg-gray-900/10 p-1 ring-1 ring-inset ring-gray-900/10 md:w-1/3 lg:w-1/2">
             <Image
               src="/mainDating.png"
               alt="dating"
@@ -56,8 +59,8 @@ const Services = () => {
             />
           </div>
 
-          <div className="flex flex-col space-y-8">
-            <div className="flex flex-col items-center rounded-md bg-white p-4">
+          <div className="flex flex-col items-center space-y-4 md:w-1/3 md:flex-1">
+            <div className="flex flex-col items-center rounded-md p-4">
               <Smartphone className="mb-2 h-10 w-10 text-pink-500" />
               <h3 className="mb-2 text-lg font-bold text-slate-700">
                 Dating Profile Assistance
@@ -67,7 +70,7 @@ const Services = () => {
                 increase your chances of finding love.
               </div>
             </div>
-            <div className="flex flex-col items-center rounded-md bg-white p-4">
+            <div className="flex flex-col items-center rounded-md p-4">
               <Megaphone className="mb-2 h-10 w-10 text-pink-500" />
               <h3 className="mb-2 text-lg font-bold text-slate-700">
                 Life Tips and Tricks
