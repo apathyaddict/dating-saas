@@ -42,22 +42,22 @@ const Team = () => {
   return (
     <MaxWidthWrapper>
       {/*  max-w-6xl with 3*/}
-      <div className="mx-auto mb-32 mt-12 max-w-6xl sm:text-center">
+      <div className="mx-auto mb-16 max-w-6xl sm:mb-32 sm:mt-12 sm:text-center">
         <h2 className="mt-2 text-3xl font-semibold text-slate-700 sm:text-5xl">
           Our Team
         </h2>
         <p className="my-2 text-lg text-slate-700">
           Three sisters working together to look out for you.
         </p>
-        {/* delete later */}
+
         {/* switch back and remove dan */}
-        <ul className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4">
+        <ul className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member) => (
             <li
               key={member.id}
-              className="mb-4 overflow-hidden rounded-lg border bg-white shadow-md"
+              className="overflow-hidden rounded-lg bg-white sm:mb-4 sm:border sm:shadow-md"
             >
-              <div className="flex h-full flex-col items-center justify-between gap-2 p-3">
+              <div className="flex h-full flex-col items-center justify-between sm:gap-2 sm:p-3">
                 <div className="relative flex flex-1 justify-center">
                   <Image
                     className="mt-4 h-32 w-32 rounded-full object-cover"
@@ -68,7 +68,7 @@ const Team = () => {
                   />
                 </div>
                 <div className="mt-4 flex-1 text-center">
-                  <h3 className="text-primary mb-2 text-lg font-semibold">
+                  <h3 className="mb-2 text-lg font-semibold text-primary">
                     {member.name}
                   </h3>
                   <p className="text-md font-semibold text-slate-600">

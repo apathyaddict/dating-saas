@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 //TODO: fix metada
 export const metadata = {
-  title: "Nebsify",
+  title: "DeNebsify",
   description: "Find the Love You Deserve",
 };
 

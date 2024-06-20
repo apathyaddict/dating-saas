@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <MaxWidthWrapper
       id="services"
-      className="mb-12 mt-28 flex flex-col items-center justify-center text-center sm:mt-40"
+      className="mt-40 flex flex-col items-center justify-center text-center sm:mb-12 sm:mt-40"
     >
       {/* <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56"> */}
       <div className="mb-12 px-6 lg:px-8">
@@ -49,7 +49,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="m-3 w-1/2 rounded-xl bg-gray-900/10 p-3 ring-1 ring-inset ring-gray-900/10 md:w-1/3 lg:w-1/2">
+          <div className="m-3 min-w-10 rounded-xl bg-gray-900/10 p-3 ring-1 ring-inset ring-gray-900/10 md:w-1/3 lg:w-1/2">
             <Image
               src="/mainDating.png"
               alt="dating"
