@@ -33,7 +33,7 @@ const teamMembers = [
     name: "Dan ",
     description: "Eye Candy",
     image: "/dan.JPG",
-    instagram: "https://www.instagram.com/michaeljohnson/",
+    instagram: "",
     bio: "The most beautiful baby in the world",
   },
 ];
@@ -46,18 +46,18 @@ const Team = () => {
         <h2 className="mt-2 text-3xl font-semibold text-slate-700 sm:text-5xl">
           Our Team
         </h2>
-        <p className="my-2 text-lg text-slate-700">
+        <p className="text-md my-4 text-slate-700 sm:text-lg">
           Three sisters working together to look out for you.
         </p>
 
         {/* switch back and remove dan */}
-        <ul className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member) => (
             <li
               key={member.id}
               className="overflow-hidden rounded-lg bg-white sm:mb-4 sm:border sm:shadow-md"
             >
-              <div className="flex h-full flex-col items-center justify-between sm:gap-2 sm:p-3">
+              <div className="flex h-full flex-row items-center justify-between sm:flex-col sm:gap-2 sm:p-3">
                 <div className="relative flex flex-1 justify-center">
                   <Image
                     className="mt-4 h-32 w-32 rounded-full object-cover"
@@ -67,44 +67,52 @@ const Team = () => {
                     height={100}
                   />
                 </div>
-                <div className="mt-4 flex-1 text-center">
+                <div className="mt-4 flex flex-1 flex-col text-center">
                   <h3 className="mb-2 text-lg font-semibold text-primary">
                     {member.name}
                   </h3>
                   <p className="text-md font-semibold text-slate-600">
                     {member.description}
                   </p>
-                </div>
-                <div className="flex-1">
+                  {/* </div> */}
+                  {/* <div className="flex-1"> */}
                   <p className="text-md max-w-full px-3 font-thin text-slate-600">
                     {member.bio}
                   </p>
-                </div>
-                <div className="p-3">
-                  <a
-                    href={member.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-slate-400 transition duration-150 ease-in-out hover:text-pink-500"
-                  >
-                    <span className="sr-only">Instagram</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-instagram"
+
+                  <div className="mx-auto items-center p-3">
+                    <a
+                      href={member.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-400 transition duration-150 ease-in-out hover:text-pink-500"
                     >
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                    </svg>
-                  </a>
+                      <span className="sr-only">Instagram</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-instagram"
+                      >
+                        <rect
+                          width="20"
+                          height="20"
+                          x="2"
+                          y="2"
+                          rx="5"
+                          ry="5"
+                        />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </li>
