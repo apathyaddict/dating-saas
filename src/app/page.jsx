@@ -1,4 +1,6 @@
+import ContactUs from "@/components/ContactUs";
 import HeroSection from "@/components/HeroSection";
+import Pricing from "@/components/Pricing";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
 import React from "react";
@@ -22,7 +24,7 @@ const Home = () => {
 
       <HeroSection />
       <Services />
-      <Team />
+
       <div>
         <div className="relative isolate">
           <div
@@ -40,6 +42,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Team />
+      <Pricing />
+      <ContactUs />
     </section>
   );
 };
