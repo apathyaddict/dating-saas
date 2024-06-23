@@ -43,7 +43,7 @@ const Home = () => {
         </div>
       </div>
       <Team />
-      <Pricing />
+      <Pricing id="pricing" />
       <ContactUs />
     </section>
   );

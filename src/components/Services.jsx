@@ -5,10 +5,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <MaxWidthWrapper
-      id="services"
-      className="mt-40 flex flex-col items-center justify-center text-center sm:mb-12 sm:mt-40"
-    >
+    <MaxWidthWrapper className="mt-10 flex flex-col items-center justify-center text-center sm:mb-12 sm:mt-10">
       {/* <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56"> */}
       <div className="mb-12 px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
