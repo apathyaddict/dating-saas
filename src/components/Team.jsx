@@ -42,7 +42,7 @@ const Team = () => {
   return (
     <MaxWidthWrapper>
       {/*  max-w-6xl with 3*/}
-      <div className="mx-auto mb-16 max-w-6xl sm:mb-32 sm:mt-12 sm:text-center">
+      <div className="mb-16 max-w-6xl sm:mx-auto sm:mb-8 sm:mt-12 sm:text-center">
         <h2 className="mt-2 text-3xl font-semibold text-slate-700 sm:text-5xl">
           Our Team
         </h2>
@@ -119,6 +119,50 @@ const Team = () => {
           ))}
         </ul>
       </div>
+
+      <section className="sm:w-full-prose mx-auto mb-28 max-w-6xl px-4 text-center sm:px-6">
+        <h2 className="mb-6 mt-6 text-center text-3xl font-semibold text-slate-700 sm:text-4xl">
+          Why Choose Us?
+        </h2>
+        <div className="sm:text-md space-y-4 text-slate-700">
+          <div>
+            <strong className="mb-2 block bg-gradient-to-r from-red-300 to-red-600 bg-clip-text text-xl font-semibold text-transparent">
+              Personalized Makeovers
+            </strong>
+            <p className="text-md">
+              We tailor our advice to fit your unique personality, making sure
+              you stand out in the crowd.
+            </p>
+          </div>
+          <div>
+            <strong className="mb-2 block bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-xl font-semibold text-transparent">
+              Expert Coaching
+            </strong>
+            <p className="text-md">
+              Our dating gurus will guide you through every step of the process,
+              from what to say to which topics to avoid.
+            </p>
+          </div>
+          <div>
+            <strong className="mb-2 block bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text text-xl font-semibold text-transparent">
+              Confidence Boost
+            </strong>
+            <p className="text-md">
+              We’ll help you discover and highlight your best qualities,
+              boosting your confidence and attractiveness.
+            </p>
+          </div>
+          <div>
+            <strong className="mb-2 block bg-gradient-to-r from-blue-300 to-blue-800 bg-clip-text text-xl font-semibold text-transparent">
+              French Queens
+            </strong>
+            <p className="text-md">
+              We’re French, we’re sassy, but we know beauty and we know love.
+              Cliché? Yes. True? Also Yes.
+            </p>
+          </div>
+        </div>
+      </section>
     </MaxWidthWrapper>
   );
 };
