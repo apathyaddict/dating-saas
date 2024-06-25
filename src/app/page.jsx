@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <section className="relative overflow-hidden">
       {/* color blob */}
-      <div
+      {/* <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        className="pointer-events-none absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden opacity-50 blur-3xl sm:-top-80"
       >
         <div
           style={{
@@ -20,11 +20,14 @@ const Home = () => {
           }}
           className="relative left-[calc(50%-13rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-red-500 via-pink-600 to-blue-700 opacity-60 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem]"
         />
-      </div>
+      </div> */}
 
       <HeroSection />
       <Services />
 
+      <Team />
+      <Pricing id="pricing" />
+      <ContactUs />
       <div>
         <div className="relative isolate">
           <div
@@ -42,9 +45,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Team />
-      <Pricing id="pricing" />
-      <ContactUs />
     </section>
   );
 };
