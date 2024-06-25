@@ -7,9 +7,9 @@ const teamMembers = [
   {
     id: 1,
     name: "Eve Seni",
-    description: "Art, Wisdom, Guidance",
+    description: "Guidance, Life Coach, Aesthetics",
     image: "/eve.jpg",
-    instagram: "https://www.instagram.com/johndoe/",
+    instagram: "https://www.instagram.com/female.saint/",
     bio: "The Gandalf you didn't know you needed.",
   },
   {
@@ -17,7 +17,7 @@ const teamMembers = [
     name: "Cindy Seni",
     description: "Looks, Dating, Social Media",
     image: "/cindy.JPG",
-    instagram: "https://www.instagram.com/janesmith/",
+    instagram: "https://www.instagram.com/israelwithcindy/",
     bio: "Netflix star, Social Media Goddess. ",
   },
   {
@@ -25,7 +25,7 @@ const teamMembers = [
     name: "Shirley Seni",
     description: "Health, Nutrition, Healthy Relationship",
     image: "/shirley.JPG",
-    instagram: "https://www.instagram.com/michaeljohnson/",
+    instagram: "https://www.instagram.com/shouna/",
     bio: "Her abs will make you believe in good things again. ",
   },
   {

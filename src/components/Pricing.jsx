@@ -34,23 +34,35 @@ const pricingItems = [
   {
     plan: "Regular",
     tagline: "Get our dating help",
-    price: 29,
+    price: 350,
+    sessionPrice: 70,
     sessions: 3,
     features: [
-      // {
-      //   text: "3 sessions",
-      //   footnote: "3 help sessions",
-      // },
+      {
+        text: "Initial Consultation",
+        footnote: `A comprehensive one-on-one session to assess your current dating approach and set personalized goals.. This includes a brief “Makeover" component, where we offer honest feedback on any physical changes that will be beneficial. We believe in being candid because, sometimes, beauty requires tough love.`,
+      },
       {
         text: "Health and Workout Plan",
-        // footnote: "Suggested and personally ",
+        footnote:
+          "Customized fitness and wellness guidance to help you look and feel your best.",
       },
       {
-        text: "On goign sessions to see your progress",
+        text: "Ongoing Sessions (3)",
+        footnote:
+          "Regular check-ins to monitor your progress, provide support, and adjust your plan as needed.",
+      },
+
+      {
+        text: "1-Hour Debrief Session",
+        negative: true,
       },
       {
-        text: "Fashion and Grooming advice",
-        footnote: "General advise",
+        text: "Fashion and Grooming Advice",
+        negative: true,
+      },
+      {
+        text: "Social Media Booster",
         negative: true,
       },
       {
@@ -62,27 +74,42 @@ const pricingItems = [
   {
     plan: "Pro",
     tagline: "For larger projects with higher needs.",
-    price: 99,
+    price: 770,
+    sessionPrice: 70,
     sessions: 6,
     // seesions: PLANS.find((p) => p.slug === "pro")!.quota,
     features: [
-      // {
-      //   text: "6 sessions",
-      //   footnote: "6 datings sessions",
-      // },
+      {
+        text: "Initial Consultation",
+        footnote:
+          "A comprehensive one-on-one session to assess your current dating approach and set personalized goals.",
+      },
       {
         text: "Health and Workout Plan",
-        // footnote: "The maximum file size of a single PDF file.",
+        footnote:
+          "Customized fitness and wellness guidance to help you look and feel your best.",
       },
       {
-        text: "On goign sessions to see your progress",
+        text: "Ongoing Sessions (6)",
+        footnote:
+          "Regular check-ins to monitor your progress, provide support, and adjust your plan as needed.",
       },
       {
-        text: "Fashion and Grooming advice",
-        footnote: "Shopping assitance and ongoing suggestions",
+        text: "1-Hour Debrief Session",
+        footnote: `A comprehensive follow-up meeting where we provide tailored advice and actionable steps to enhance your dating potential. This includes a "Makeover" component, where we offer honest feedback on any physical `,
+      },
+      {
+        text: "Fashion and Grooming Advice",
+        footnote: `Expert styling and grooming tips to elevate your appearance and boost your confidence.`,
+      },
+
+      {
+        text: "Social Media Booster",
+        footnote: `Advice from our very own social media, influencer and Content creator on how to enhance your dating profile, and your socials.`,
       },
       {
         text: "Dating Simulation",
+        footnote: `Real-life practice sessions with feedback to hone your dating skills and prepare you for real-world encounters`,
       },
     ],
   },
@@ -123,18 +150,20 @@ const Pricing = () => {
                   <p className="font-display my-3 text-6xl font-semibold text-slate-700">
                     ${item.price}
                   </p>
-                  <p className="text-gray-500">one time payment</p>
+                  <p className="text-gray-500">
+                    + ${item.sessionPrice} per session
+                  </p>
                 </div>
 
                 <div className="flex h-16 items-center justify-center border-b border-t border-gray-200 bg-gray-50">
                   <div className="flex items-center space-x-1">
-                    <p>{item.sessions.toLocaleString()} sessions included</p>
+                    <p>{item.sessions.toLocaleString()} sessions minimum</p>
                     <Tooltip delayDuration={300}>
                       <TooltipTrigger className="ml-1.5 cursor-default">
                         <HelpCircle className="h-4 w-4 text-zinc-500" />
                       </TooltipTrigger>
                       <TooltipContent className="w-80 p-2">
-                        Personal and made for you
+                        More can be purchased if necessary
                       </TooltipContent>
                     </Tooltip>
                   </div>
