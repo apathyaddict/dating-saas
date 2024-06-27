@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -25,15 +25,6 @@ const Signup = () => {
     socialMediaType: "",
     socialMediaName: "",
   });
-
-  //   const handleChange = (e) => {
-  //     const { name, value } = e.target;
-
-  //     setFormValues({
-  //       ...formValues,
-  //       [name]: value,
-  //     });
-  //   };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -79,8 +70,6 @@ const Signup = () => {
             type="text"
             id="firstName"
             name="firstName"
-            // value={formValues.firstName}
-            // onChange={handleChange}
             placeholder="First Name"
             className="max-w-[500px]"
           />
@@ -88,8 +77,6 @@ const Signup = () => {
             type="text"
             id="lastName"
             name="lastName"
-            // value={formValues.lastName}
-            // onChange={handleChange}
             placeholder="Last Name"
             className="max-w-[500px]"
           />
@@ -97,8 +84,6 @@ const Signup = () => {
             type="email"
             id="email"
             name="email"
-            // value={formValues.email}
-            // onChange={handleChange}
             placeholder="Email"
             className="max-w-[500px]"
           />
@@ -106,8 +91,6 @@ const Signup = () => {
             type="text"
             id="country"
             name="country"
-            // value={formValues.country}
-            // onChange={handleChange}
             placeholder="Country"
             className="max-w-[500px]"
           />
@@ -116,8 +99,6 @@ const Signup = () => {
             <select
               id="socialMediaType"
               name="socialMediaType"
-              //   value={formValues.socialMediaType}
-              //   onChange={handleChange}
               className="w-[180px] rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             >
               <option value="">Select Social Media</option>
@@ -129,8 +110,6 @@ const Signup = () => {
               type="text"
               id="socialMediaName"
               name="socialMediaName"
-              //   value={formValues.socialMediaName}
-              //   onChange={handleChange}
               placeholder="Social Media Name"
               className="max-w-[303px]"
             />
@@ -139,13 +118,11 @@ const Signup = () => {
             type="text"
             id="message"
             name="message"
-            // value={formValues.message}
-            // onChange={handleChange}
             placeholder="Message"
             className="max-w-[500px]"
           />
 
-          <Button className="mt-5 font-medium" type="submit">
+          <Button type="submit" className="mt-5 bg-[#218aff] px-8 font-bold">
             Submit
           </Button>
         </form>
