@@ -25,7 +25,7 @@ const HeroSection = () => {
           className: "mt-5 font-medium",
           variant: "iphone",
         })}
-        href="/pricing"
+        href="/signup"
       >
         Sign Up Today <MessageCircleHeart className="ml-2 h-5 w-5" />
       </Link>
